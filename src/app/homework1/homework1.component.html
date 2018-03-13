@@ -1,6 +1,9 @@
 Name<input type="text" [(ngModel)]="tp.name">
 Grade<input type="text" [(ngModel)]="tp.grade">
 <button (click)="save()">save</button>
+<div *ngIf = "er != '' ">
+  {{er}}
+</div>
 filter <input type="text" [(ngModel)]="filter">
 
 
@@ -17,4 +20,3 @@ filter <input type="text" [(ngModel)]="filter">
 </table>
 
 
-<!-- | filterByImpure: ['English']: filter -->

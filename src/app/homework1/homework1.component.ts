@@ -11,6 +11,7 @@ export class Homework1Component implements OnInit {
       grade:0
     }
 
+    er:string='';
     filter:string;
 
     grades:Grade []=[]
@@ -20,12 +21,13 @@ export class Homework1Component implements OnInit {
   ngOnInit() {
   }
   save(){
+    this.er='';
     console.log(this.tp);
     if(this.tp.grade<=100 &&this.tp.grade>0 ){
       let _dic:Grade=Object.assign({},this.tp);
       this.grades.push(_dic);
     }else{
-      console.log("error");
+      this.er="分數必須大於0小於100";
     }
     
 
