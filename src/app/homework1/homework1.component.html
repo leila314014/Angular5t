@@ -1,0 +1,20 @@
+Name<input type="text" [(ngModel)]="tp.name">
+Grade<input type="text" [(ngModel)]="tp.grade">
+<button (click)="save()">save</button>
+filter <input type="text" [(ngModel)]="filter">
+
+
+
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Grade</th>
+  </tr>
+  <tr *ngFor="let s of grades | filterByImpure: ['name']: filter" >
+    <td>{{s.name}}</td>
+    <td>{{s.grade}}</td>
+  </tr>
+</table>
+
+
+<!-- | filterByImpure: ['English']: filter -->

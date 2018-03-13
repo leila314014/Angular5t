@@ -10,6 +10,7 @@ import { Lesson3Component } from './lesson3/lesson3.component';
 import {NgPipesModule} from 'ngx-pipes';
 import { Pratice1Component } from './pratice1/pratice1.component';
 import { Lesson4Component } from './lesson4/lesson4.component';
+import { Homework1Component } from './homework1/homework1.component';
 
 
 
@@ -20,7 +21,8 @@ import { Lesson4Component } from './lesson4/lesson4.component';
     Lesson2Component,
     Lesson3Component,
     Pratice1Component,
-    Lesson4Component
+    Lesson4Component,
+    Homework1Component
   ],
   imports: [
     BrowserModule,
