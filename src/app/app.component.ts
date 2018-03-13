@@ -13,4 +13,18 @@ export class AppComponent {
   zzz(){
     console.log('123321');
   }
+
+
+  aaa:Account = {
+    account:'lux',
+    password:'abc123'
+  }
+
+}
+
+
+
+export interface Account {
+  account:string,
+  password:string
 }

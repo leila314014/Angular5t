@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of weekday" [ngStyle]="{'color':item<60? 'red':'green'}">{{item}}分</li>
+</ul>
+
+
+{{now | date:"yyy/MM/dd HH:mm:ss"}}
+<br>
+
+{{now}}
