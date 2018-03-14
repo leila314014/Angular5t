@@ -8,7 +8,7 @@
 
 
 
-Grade:<input type="text"[(ngModel)]="grade">
+Grade:<input type="text"[(ngModel)]="grade" (ngModelChange)="change($event)">
 
 <h3 *ngIf ="grade >=60">好棒</h3>
 <h3 *ngIf ="grade < 60">好笨</h3>

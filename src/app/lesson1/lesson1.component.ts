@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output , EventEmitter } from '@angular/core'; 
 
 @Component({
   selector: 'app-lesson1',
@@ -9,6 +9,9 @@ export class Lesson1Component implements OnInit {
   twMoney=0;
 
   r=0;
+
+
+
   constructor() { }
 
   ngOnInit() {
