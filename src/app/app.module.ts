@@ -17,6 +17,8 @@ import { Lesson6Component } from './lesson6/lesson6.component';
 import { HightlightDirective } from './hightlight.directive';
 import { Lesson61Component } from './lesson6-1/lesson6-1.component';
 import { AppRoutingModule } from './app-routing.module';
+import { Homework2Component } from './homework2/homework2.component';
+import { Homeork2BtnComponent } from './homeork2-btn/homeork2-btn.component';
 
 
 
@@ -33,7 +35,9 @@ import { AppRoutingModule } from './app-routing.module';
     InputButtomComponent,
     Lesson6Component,
     HightlightDirective,
-    Lesson61Component
+    Lesson61Component,
+    Homework2Component,
+    Homeork2BtnComponent
   ],
   imports: [
     BrowserModule,

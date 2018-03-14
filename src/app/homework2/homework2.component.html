@@ -1,0 +1,6 @@
+<input type="number" [(ngModel)]="n1">+ <input type="number" [(ngModel)]="n2">
+{{n3}}
+
+<app-homeork2-btn [num]="n1" [num2]="n2" (numOut)="nGet($event)"></app-homeork2-btn>
+
+{{n3}}
