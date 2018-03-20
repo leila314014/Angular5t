@@ -19,6 +19,13 @@ import { Lesson61Component } from './lesson6-1/lesson6-1.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Homework2Component } from './homework2/homework2.component';
 import { Homeork2BtnComponent } from './homeork2-btn/homeork2-btn.component';
+import { DyclassComponent } from './dyclass/dyclass.component';
+import { Jq1Component } from './jq1/jq1.component';
+import { Lesson7Component } from './lesson7/lesson7.component';
+import { BmiService } from './bmi.service';
+import { Homework3Component } from './homework3/homework3.component';
+import { Hw3BtnComponent } from './hw3-btn/hw3-btn.component';
+import { Hw3Service } from './hw3.service';
 
 
 
@@ -37,7 +44,12 @@ import { Homeork2BtnComponent } from './homeork2-btn/homeork2-btn.component';
     HightlightDirective,
     Lesson61Component,
     Homework2Component,
-    Homeork2BtnComponent
+    Homeork2BtnComponent,
+    DyclassComponent,
+    Jq1Component,
+    Lesson7Component,
+    Homework3Component,
+    Hw3BtnComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +57,10 @@ import { Homeork2BtnComponent } from './homeork2-btn/homeork2-btn.component';
     NgPipesModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BmiService,
+    Hw3Service
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { BmiService } from '../bmi.service';
 
 @Component({
   selector: 'app-lesson2',
@@ -11,9 +12,10 @@ export class Lesson2Component implements OnInit {
 
   @Output() gradeOut:EventEmitter<number> = new EventEmitter<number>();
 
-  constructor() { }
+  constructor(private bimService:BmiService) { }
 
   ngOnInit() {
+    this.bimService.pub_temp1=99;
   }
 
   xxxx(){
